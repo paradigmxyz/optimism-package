@@ -167,12 +167,8 @@ def get_config(
         "--metrics=0.0.0.0:{0}".format(METRICS_PORT_NUM),
         "--discovery.port={0}".format(discovery_port),
         "--port={0}".format(discovery_port),
+        "--rollup.discovery.v4",
     ]
-
-    if not sequencer_enabled:
-        cmd.append(
-            "--rollup.sequencer-http={0}".format(sequencer_context.beacon_http_url)
-        )
 
     if len(existing_el_clients) > 0:
         cmd.append(
@@ -197,6 +193,10 @@ def get_config(
         cmd=cmd,
         files=files,
         private_ip_address_placeholder=constants.PRIVATE_IP_ADDRESS_PLACEHOLDER,
+        env_vars={
+            "EXP1_SK": "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
+            "EXP1_WHITELIST": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+        },
     )
 
 
