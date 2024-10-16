@@ -194,8 +194,8 @@ def get_config(
         files=files,
         private_ip_address_placeholder=constants.PRIVATE_IP_ADDRESS_PLACEHOLDER,
         env_vars={
-            "EXP1_SK": "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
-            "EXP1_WHITELIST": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+            "EXP1_SK": "0x8b3a350cf5c34c9194ca85829a2df0ec3153be0318b5e2d3348e872092edffba",
+            "EXP1_WHITELIST": "0x0116686E2291dbd5e317F47faDBFb43B599786Ef"
         },
     )
 
