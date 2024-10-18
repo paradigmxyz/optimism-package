@@ -58,6 +58,7 @@ def input_parser(plan, input_args):
             granite_time_offset=result["network_params"]["granite_time_offset"],
             holocene_time_offset=result["network_params"]["holocene_time_offset"],
             interop_time_offset=result["network_params"]["interop_time_offset"],
+            alphanet_time_offset=result["network_params"]["alphanet_time_offset"],
         ),
         additional_services=result.get(
             "additional_services", DEFAULT_ADDITIONAL_SERVICES
@@ -146,6 +147,7 @@ def default_network_params():
         "granite_time_offset": None,
         "holocene_time_offset": None,
         "interop_time_offset": None,
+        "alphanet_time_offset": None,
     }
 
 

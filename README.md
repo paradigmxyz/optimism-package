@@ -126,6 +126,10 @@ optimism_package:
     # Offset is in seconds
     interop_time_offset: ""
 
+    # Alphanet for
+    # Defaults to None - not activated - decimal value
+    # Offset is in seconds
+    alphanet_time_offset: ""
 
   # Additional services to run alongside the network
   # Defaults to []

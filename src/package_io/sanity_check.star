@@ -18,6 +18,7 @@ SUBCATEGORY_PARAMS = {
         "granite_time_offset",
         "holocene_time_offset",
         "interop_time_offset",
+        "alphanet_time_offset",
     ],
     "op_contract_deployer_params": ["image"],
 }

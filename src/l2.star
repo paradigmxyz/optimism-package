@@ -101,4 +101,8 @@ def get_network_fork_activation(network_params):
         env_vars["INTEROP_TIME_OFFSET"] = "0x" + "%x" % int(
             network_params.interop_time_offset
         )
+    if network_params.alphanet_time_offset != None:
+        env_vars["ALPHANET_TIME_OFFSET"] = "0x" + "%x" % int(
+            network_params.alphanet_time_offset
+        )
     return env_vars
